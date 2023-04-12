@@ -1,4 +1,6 @@
 package conversor;
+import java.io.IOException;
+
 import javax.swing.JOptionPane;
 import javax.swing.UIManager;
 
@@ -10,7 +12,7 @@ public class cuadroDialogo {
     entradaValor valor = new entradaValor();
 
 	
-    public void mostrarOpciones() {
+    public void mostrarOpciones() throws IOException {
     	
     	UIManager.put("OptionPane.okButtonText", "Aceptar");
 		UIManager.put("OptionPane.cancelButtonText", "Cancelar");

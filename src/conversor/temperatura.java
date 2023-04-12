@@ -1,5 +1,7 @@
 package conversor;
 
+import java.io.IOException;
+
 import javax.swing.JOptionPane;
 
 public class temperatura {
@@ -22,7 +24,7 @@ public class temperatura {
 	
 	
 	
-	public  void mostrarSelectorDetemperatura() {
+	public  void mostrarSelectorDetemperatura() throws IOException {
         String[] options = {"De celcius a farenheit", "De farenheit a celcius"};
         String selectedOption = (String) JOptionPane.showInputDialog(null, "Seleccione una opción de conversión:", "Conversor de temperatura", JOptionPane.DEFAULT_OPTION, null, options, options[0]);
 
